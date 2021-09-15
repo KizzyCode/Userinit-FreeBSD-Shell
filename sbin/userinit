@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+. /usr/local/libexec/hookworm
+
+# Process the userinit hooks
+hookworm_main "/usr/local/libexec/userinit.d"
